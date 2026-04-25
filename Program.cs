@@ -34,7 +34,7 @@ async Task ProcessAsync()
         data: new { Message = "Hello, Event Grid!" }
     );
 
-    // Send the event to Azure Event Grid
+    // Send the event to Azure Event Grid.
     await client.SendEventAsync(eventGridEvent);
     Console.WriteLine("Event sent successfully.");
 }
